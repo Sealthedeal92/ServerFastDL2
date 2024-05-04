@@ -1,0 +1,153 @@
+//////////////////////////////////////
+//// High Octane Pack Kill Icons ////
+////////////////////////////////////
+"custom_kill_icons"
+{
+	TextureData
+	{
+		"ssg"
+		{
+			"dfile"		"HUD/d_images_ssg"
+			"dnegfile"	"HUD/dneg_images_ssg"
+			"x"			"0"
+			"y"			"0"
+			"width"		"75"
+			"height"	"32"
+		}
+		"gb"
+		{
+       		"dfile"     "HUD/d_images_gb"
+			"dnegfile"  "HUD/dneg_images_gb"
+			"x"         "0"
+			"y"         "0"
+			"width"     "108"
+			"height"    "30"
+        }	
+	    "deg"
+		{   
+		    "dfile"     "HUD/d_images_deg"
+			"dnegfile"  "HUD/dneg_images_deg"
+			"x"         "0"
+			"y"         "0"
+			"width"     "128"
+			"height"    "32"
+		}
+        "axt"
+        {
+            "dfile"     "HUD/d_images_axt"
+            "dnegfile"  "HUD/dneg_images_axt"
+            "x"         "0"
+            "y"         "0"
+            "width"     "69"
+            "height"    "33"
+        }	
+        "powerjack"
+        {   
+		    "dfile"     "HUD/d_images_powerjack"
+            "dnegfile"  "HUD/dneg_images_powerjack"
+            "x"         "15"
+            "y"         "0"
+            "width"     "95"
+            "height"    "32"
+        }
+        "bfb"
+        {
+            "dfile"     "HUD/d_images_bfb"
+            "dnegfile"  "HUD/dneg_images_bfb"
+            "x"         "0"
+            "y"         "0"
+            "width"     "96"
+            "height"    "29"
+        }
+        "dragonwrath"
+        {
+            "dfile"     "HUD/d_images_dragonwrath"
+            "dnegfile"  "HUD/dneg_images_dragonwrath"
+            "x"         "0"
+            "y"         "0"
+            "width"     "113"
+            "height"    "28"
+        }
+        "pbpp"
+        {
+            "dfile"     "HUD/d_images_pbpp"
+            "dnegfile"  "HUD/dneg_images_pbpp"
+            "x"         "0"
+            "y"         "0"
+            "width"     "46"
+            "height"    "32"
+        }
+        "gpp"
+        {
+            "dfile"     "HUD/d_images_gpp"
+            "dnegfile"  "HUD/dneg_images_gpp"
+            "x"         "0"
+            "y"         "0"
+            "width"     "58"
+            "height"    "32"
+        }
+        "cringe"
+        {
+            "dfile"     "HUD/d_images_cringe"
+            "dnegfile"  "HUD/dneg_images_cringe"
+            "x"         "0"
+            "y"         "0"
+            "width"     "70"
+            "height"    "16"
+        }
+        "FaN"
+        {
+		    "dfile"     "HUD/d_images_FaN"
+            "dnegfile"  "HUD/dneg_images_FaN"
+            "x"         "0"
+            "y"         "0"
+            "width"     "108"
+            "height"    "32"
+        }
+        "tetshot"
+        {
+		    "dfile"     "HUD/d_images_tetshot"
+            "dnegfile"  "HUD/dneg_images_tetshot"
+            "x"         "0"
+            "y"         "0"
+            "width"     "49"
+            "height"    "32"
+        }
+        "chemthrower"
+        {
+		    "dfile"     "HUD/d_images_chemthrower"
+            "dnegfile"  "HUD/dneg_images_chemthrower"
+            "x"         "0"
+            "y"         "0"
+            "width"     "108"
+            "height"    "32"
+        }
+        "spitfire"
+        {
+		    "dfile"     "HUD/d_images_spitfire"
+            "dnegfile"  "HUD/dneg_images_spitfire"
+            "x"         "0"
+            "y"         "0"
+            "width"     "132"
+            "height"    "60"
+        }
+        "marketgardener"
+        {
+		    "dfile"     "HUD/d_images_marketgardener"
+            "dnegfile"  "HUD/dneg_images_marketgardener"
+            "x"         "0"
+            "y"         "0"
+            "width"     "108"
+            "height"    "32"
+        }
+        "sharpshooter"
+        {
+		    "dfile"     "HUD/d_images_sharpshooter"
+            "dnegfile"  "HUD/dneg_images_sharpshooter"
+            "x"         "0"
+            "y"         "0"
+            "width"     "108"
+            "height"    "32"
+        }		
+	}
+}

@@ -1,0 +1,1434 @@
+"High_Octane_Pack" 
+//////////////////////////////
+//// version 1.0 weapons ////
+////////////////////////////
+{
+	"items"
+	{
+	    "5001" // First weapon added, also hidden.
+		{
+			"tags"
+			{
+				"bots_cant_use"			"1"														
+			}		
+			"name"						"TF_WEAPON_SSG"
+			"prefab"					"weapon_syringegun"
+			"show_in_armory"			"0"
+			"item_slot"					"primary"
+			
+			"item_name_color"			"227 135 255 255"
+			"propername"				"0"
+			"item_name"					"Super Syringe Gun"
+			"item_type_name"			"Syringe Gun"
+			"item_description"			"Healing Isn't this doctor's priority!"
+			"item_logname"				"SSG"
+			"item_iconname"				"ssg"
+		    "image_inventory"			"backpack/weapons/w_models/w_SSG_backpackicon"
+			"model_world"				"models/weapons/c_models/c_ssg.mdl"
+			"model_player"				"models/weapons/c_models/c_ssg.mdl"
+			"attach_to_hands"			"1"
+//			"extra_wearable"            "models\player\items\cardiologists_camo.mdl"
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"attributes"
+			{
+			    "hidden primary max ammo bonus"			
+                {
+				    "attribute_class"   "mult_maxammo_primary"
+					"value"             "1.067"
+				}
+       			"move speed bonus"
+				{
+					"attribute_class"   "mult_player_movespeed"
+					"value"				"1.30"
+				}
+			    "increased jump height"																
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"1.2"
+				}
+				"increase player capture value"
+				{
+				    "attribute_class"   "add_player_capturevalue"
+					"value"             "1"
+				}
+			    "fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.7"
+                }
+                "clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"2.0"
+				}
+                "damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.3"
+				}
+                "projectile speed increased"	
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.7"
+				}
+                "heal rate penalty"
+                {
+                    "attribute_class"   "mult_medigun_healrate"
+                    "value"             "0.01"
+                }
+                "uber duration decreased on wearer"
+				{   
+				    "attribute_class"   "add_uber_time"
+                    "value"             "0.5"
+                }
+                "max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-25"
+				}				
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_SSG.Single"				
+				"sound_burst"			"Weapon_SSG.SingleCrit"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+        "5002"
+        {
+            "name"						"TF_WEAPON_AXTINGUISHER"  
+			"prefab"					"weapon_fireaxe"
+			"show_in_armory"			"1"
+			"item_slot"					"melee"
+			
+			"item_name_color"			"71 98 145 255"
+			"propername"				"1"
+			"item_name"					"Axtinguisher"
+			"item_type_name"			"Axe"
+			"item_description"			"Who says not to play with fire?"
+			"item_logname"				"axt"
+			"item_iconname"				"axt"
+		    "image_inventory"			"backpack/weapons/w_models/w_bpiconaxt"
+			"model_world"				"models/weapons/c_models/c_axtinguisher/c_axtinguisher_pyro.mdl"
+			"model_player"				"models/weapons/c_models/c_axtinguisher/c_axtinguisher_pyro.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"attributes"
+			{
+				"crit vs burning players"
+				{
+				    "attribute_class"   "or_crit_vs_playercond"
+					"value"             "1"
+				}	
+				"haste on hit"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+                    "value"             "5"
+                }					
+				"heal on kill"
+                {
+                    "attribute_class"   "heal_on_kill"
+                    "value"             "40"
+                }				
+				"axt vuln"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}	
+				"crit mod disabled"
+                {
+                    "attribute_class"   "mult_crit_chance"
+                    "value"             "0"
+				}
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }
+                "self mark for death"
+                {
+                    "attribute_Class"   "self_mark_for_death"
+                    "value"             "1"
+                }
+                "dmg taken from crit increased"
+				{
+				    "attribute_class"   "mult_dmgtaken_from_crit"
+				    "value"             "1.4"
+				}
+				"add condition on hit"
+				{
+					"attribute_class"	"add_onhit_addcond_self_weapon"
+					"value"				"121 5"													
+				}							
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"  
+        }
+        "5003"
+        { 
+            "name"                      "TF_WEAPON_GB"
+            "prefab"                    "weapon_scattergun"
+            "show_in_armory"            "1"
+            "item_slot"                 "primary"
+
+			"item_name_color"			"240 175 84 255"
+			"propername"				"0"
+			"item_name"					"GentleMann's Blaster"
+			"item_type_name"			"Scattergun"
+			"item_description"			"Can't hit what ain't there!"
+			"item_logname"				"gentleblaster"
+			"item_iconname"				"gb"
+		    "image_inventory"			"backpack/weapons/w_models/w_GB_backpackicon"
+			"model_world"				"models/weapons/c_models/c_pep_scattergun.mdl"
+			"model_player"				"models/weapons/c_models/c_pep_scattergun.mdl"
+			"attach_to_hands"			"1"
+			"extra_wearable"            "models\workshop\player\items\all_class\jul13_fedora\jul13_fedora_scout.mdl"			
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+                "move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"1.30"
+				}
+				"nofalldmg"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"jump height on wearer"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"
+				}				
+		        "no double jump"
+                {    
+					"attribute_class"   "set_scout_doublejump_disabled"
+                    "value"             "1"
+                }
+                "damage penalty"	
+                {
+                    "attribute_class"   "mult_dmg"
+                    "value"             "0.9"
+                }
+                "spread penalty"
+                {
+                    "attribute_class"   "mult_spread_scale"
+                    "value"             "1.2"	
+                }
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }
+				"dmg taken from fall reduced"
+				{
+			        "attribute_class"	"mult_dmgtaken_from_fall"
+		            "value"             "0.01"		
+		        }
+				"increased jump height"																
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"1.1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_GB.Single"				
+				"sound_burst"			"Weapon_GB.SingleCrit"
+				"player_bodygroups"
+				{
+					"hat"				"1"
+					"headphones"		"1"
+				}
+			}	
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"  
+        }
+        "5004"
+        {
+        	"name"                      "TF_WEAPON_DEGREASER"
+            "prefab"                    "weapon_flamethrower"
+            "show_in_armory"            "1"
+            "item_slot"                 "primary"
+
+			"item_name_color"			"71 98 145 255"
+			"propername"				"1"
+			"item_name"					"Degreaser"
+			"item_type_name"			"Flame Thrower"
+			"item_description"			"Grill 'em with style!"
+			"item_logname"				"degreaser"
+			"item_iconname"				"deg"
+		    "image_inventory"			"backpack/weapons/w_models/w_deg_backpackicon"
+			"model_world"				"models/weapons/c_models/c_degreaser/c_degreaser.mdl"
+			"model_player"				"models/weapons/c_models/c_degreaser/c_degreaser.mdl"
+			"attach_to_hands"			"1"
+			"extra_wearable"			"models/player/items/set_attendant.mdl"
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"attributes"
+			{
+				"hide_attrib_percentage"														
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"										
+					"value"				"0.4"
+				}
+				"60% draw speed wearer"
+				{
+					"attribute_class"	"DISPLAY_ONLY"
+					"value"				"1"													
+				}				
+				"damage penalty"
+				{
+				    "attribute_class"   "mult_dmg"
+					"value"             "0.50"
+				}
+				"airblast cost increased"
+				{
+       				"attribute_class"   "mult_airblast_cost"
+					"value"             "1.25"
+				}
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }
+				"deploy time decreased"
+				{
+					"attribute_class"	"mult_deploy_time"
+					"value"				"0.4"													
+				}				
+   			}
+			"visuals"																			
+			{
+				"sound_single_shot"		"Weapon_Degreaser.FireStart"
+				"sound_reload"			"Weapon_Degreaser.FireLoop"
+				"sound_special3"		"Weapon_Degreaser.WindDown"					
+				"sound_burst"			"Weapon_Degreaser.FireLoopCrit"
+            }
+			"mouse_pressed_sound"		"#ui/item_flamethrower_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+        }
+        "5005"
+        {
+            "name"						"TF_WEAPON_GPP"
+			"prefab"					"weapon_pistol"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+			
+			"item_name_color"			"240 175 84 255"
+			"propername"				"0"
+			"item_name"					"GentleMann's Pocket Pistol"
+			"item_type_name"			"Pistol"
+			"item_description"			"Are you even frickin' trying?!"
+			"item_logname"				"GPP"
+			"item_iconname"				"gpp"
+		    "image_inventory"			"backpack/weapons/w_models/w_gppicon"
+			"model_world"				"models/weapons/c_models/c_pistol/c_pistol.mdl"
+			"model_player"				"models/weapons/c_models/c_pistol/c_pistol.mdl"
+			"attach_to_hands"			"1"
+			"extra_wearable"			"models/workshop/player/items/all_class/jul13_sweet_shades/jul13_sweet_shades_scout.mdl"			
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{								
+				"gpp property"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+			    }
+				"damage bonus"
+                {
+                    "attribute_class"   "mult_dmg"
+                    "value"             "1.25"
+				}
+                "weapon spread bonus"
+				{
+				    "attribute_class"   "mult_spread_scale"
+					"value"             "0.5"
+				}
+                "single wep deploy time decreased"
+                {
+                    "attribute_class"   "mult_single_wep_deploy_time"
+                    "value"             "0.7"
+                }					
+				"clip size penalty"
+                {
+                    "attribute_class"   "mult_clipsize"
+                    "value"             "0.84" 
+                }
+                "fire rate penalty"
+                {
+                    "attribute_class"   "mult_postfiredelay"
+                    "value"             "1.4"
+                }
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }
+				"mod crit while airborne"
+				{
+				    "attribute_class"   "crit_while_airborne"
+					"value"             "1"
+				}
+                "crits become minicrits"
+                {
+                    "attribute_class"   "crits_become_minicrits"
+                    "value"             "1"
+                }									
+			}
+			"visuals"																			
+			{
+				"sound_single_shot"		"Weapon_GPP.Single"
+				"sound_burst"			"Weapon_GPP.SingleCrit"
+				"sound_reload"			"Weapon_GPP.WorldReload"				
+			}
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"  
+        }
+        "5006"
+        {
+            "name"                      "TF_WEAPON_POWERJACK"
+            "prefab"                    "weapon_fireaxe"
+            "show_in_armory"            "1"
+            "item_slot"                 "melee"
+
+            "item_name_color"			"71 98 145 255"
+			"propername"				"1"
+			"item_name"					"Powerjack"
+			"item_type_name"			"Sledgehammer"
+			"item_description"			"Someone's gonna take a wrong turn."
+			"item_logname"				"pwrjack"
+     		"item_iconname"				"powerjack"
+		    "image_inventory"			"backpack/weapons/w_models/w_powerjack"
+			"model_world"				"models/weapons/c_models/c_powerjack/c_powerjack.mdl"
+			"model_player"				"models/weapons/c_models/c_powerjack/c_powerjack.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"attributes"
+			{			
+                "pwrjackspeed"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}	
+				"heal on kill"
+                {
+                    "attribute_class"   "heal_on_kill"
+                    "value"             "35"
+				}
+                "self mark for death"
+                {
+                    "attribute_Class"   "self_mark_for_death"
+                    "value"             "1"
+                }
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }				
+				"mult_player_movespeed_active"
+                {
+                    "attribute_class"   "mult_player_movespeed_active"
+                    "value"             "1.15"
+				}				
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"  
+        }
+        "5007"
+        {
+            "name"                      "TF_WEAPON_DRAGONWRATH"
+            "prefab"                    "weapon_shotgun"
+            "show_in_armory"            "1"
+            "item_slot"                 "secondary"
+
+            "item_name_color"			"189 36 54 255"
+			"propername"				"0"
+			"item_name"					"Dragon's Wrath"
+			"item_type_name"			"Shotgun"
+			"item_description"			"Cross my path and feel my wrath."
+			"item_logname"				"dragonwrath"
+       		"item_iconname"				"dragonwrath"
+		    "image_inventory"			"backpack/weapons/w_models/w_dragonwrath"
+			"model_world"				"models/weapons/c_models/c_trenchgun/c_trenchgun.mdl"
+			"model_player"				"models/weapons/c_models/c_trenchgun/c_trenchgun.mdl"
+			"brass_model"				"models/weapons/shells/custom_shells/shell_turkey.mdl"				
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"attributes"
+			{			
+				"dragonwrathproperty1"
+				{
+				    "attribute_class"    "DISPLAY_ONLY"
+					"value"              "1"
+				}
+                "extra vs burn dmg2"
+                {
+                    "attribute_class"    "DISPLAY_ONLY"
+                    "value"              "1"
+                }
+                "bullets per shot bonus"
+                {
+                    "attribute_class"   "mult_bullets_per_shot"
+                    "value"             "1.6"
+                }				
+				"Reload time decreased"
+				{
+				    "attribute_class"   "mult_reload_time"
+					"value"             "0.5"
+				}
+                "dragonfirespeed"
+                {
+                    "attribute_class"   "DISPLAY_ONLY"
+                    "value"             "1"
+                }
+                "damage penalty"
+                {   
+				    "attribute_class"   "mult_dmg"
+				    "value"             "0.7"
+				}
+                "dragonwrathproperty2"
+                {
+                    "attribute_class"   "DISPLAY_ONLY"
+                    "value"             "1"
+                }					
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }				
+				"mod burst fire"
+                {
+                    "attribute_class"   "set_burstfire"
+                    "value"             "3"
+				}
+				"fire rate burst"
+				{
+				    "attribute_class"   "mult_burstfiredelay"
+					"value"             "0.7"
+				}
+                "clip size penalty"
+                {
+                    "attribute_class"   "mult_clipsize"
+					"value"             "0.5" 
+			    }
+                "mod horizontal spread"
+                {
+                    "attribute_class"   "mod_horizontal_spread"
+                    "value"             "1"
+                }
+                "spread penalty"
+                { 
+                    "attribute_class"   "mult_spread_scale"
+                    "value"             "1.5"
+                }
+                "damage bonus vs burning"
+                {
+                    "attribute_class"   "mult_dmg_vs_burning"
+                    "value"             "1.40"
+                }				
+			}
+            "visuals"
+			{
+				"sound_single_shot"		"Weapon_Dragon.Single"				
+				"sound_burst"			"Weapon_Dragon.SingleCrit"
+			}				
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"  
+        }
+        "5008"
+        {
+            "name"                      "TF_WEAPON_BFB"
+            "prefab"                    "weapon_scattergun"
+            "show_in_armory"            "1"
+            "item_slot"                 "primary"
+
+            "item_name_color"			"71 98 145 255"
+			"propername"				"0"
+			"item_name"					"Baby Face's Blaster"
+			"item_type_name"			"Scattergun"
+			"item_description"			"Running circles around y'all!"
+			"item_logname"				"BFB"
+       		"item_iconname"				"bfb"
+		    "image_inventory"			"backpack/weapons/w_models/w_bfb"
+			"model_world"				"models/weapons/c_models/c_bfb.mdl"
+			"model_player"				"models/weapons/c_models/c_bfb.mdl"
+			"extra_wearable"			"models/player/items/scout/pep_hat.mdl"			
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+                "bfbonkill"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}
+                "move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"1.10"
+				}				
+				"clip size penalty"
+                {
+                    "attribute_class"   "mult_clipsize"
+                    "value"             "0.66"
+                }
+                "reload time increased"
+                {
+                    "attribute_class"   "mult_reload_time"
+                    "value"             "1.15"
+                }					
+                "add condition on kill"
+				{
+					"attribute_class"	"add_onkill_addcond_self"
+					"value"				"32 6"
+				}			
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_GB.Single"				
+				"sound_burst"			"Weapon_GB.SingleCrit"
+				"player_bodygroups"
+				{
+					"hat"				"1"
+					"headphones"		"1"
+				}
+			}	
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"  	
+	    }
+        "5009"
+        {
+            "name"                      "TF_WEAPON_PBPP"
+            "prefab"                    "weapon_pistol"
+            "show_in_armory"            "1"
+            "item_slot"                 "secondary"
+
+            "item_name_color"			"71 98 145 255"
+			"propername"				"0"
+			"item_name"					"Pretty Boy's Pocket Pistol"
+			"item_type_name"			"Pistol"
+			"item_description"			"Only losers play fair!"
+			"item_logname"				"PBPP"
+       		"item_iconname"				"pbpp"
+		    "image_inventory"			"backpack/weapons/w_models/w_pbpp"
+			"model_world"				"models/weapons/c_models/c_pep_pistol/c_pep_pistol.mdl"
+			"model_player"				"models/weapons/c_models/c_pep_pistol/c_pep_pistol.mdl"
+			"extra_wearable"			"models/workshop/player/items/all_class/jul13_sweet_shades/jul13_sweet_shades_scout.mdl"		
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+                "fire rate bonus"
+				{
+				    "attribute_class"   "mult_postfiredelay"
+					"value"             "0.85"
+				}				
+				"clip size penalty"
+                {
+                    "attribute_class"   "mult_clipsize"
+                    "value"             "0.75"
+                }							
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Pocket.Single"				
+				"sound_burst"			"Weapon_Pocket.SingleCrit"
+			}	
+			"mouse_pressed_sound"		"#ui/item_light_gun_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"  	
+	    }
+        "5010"
+        {
+            "name"                      "TF_WEAPON_CHEMTHROWER"
+            "prefab"                    "weapon_flamethrower"
+            "show_in_armory"            "1"
+            "item_slot"                 "primary"
+
+            "item_name_color"			"245 221 125 255"
+			"propername"				"1"
+			"item_name"					"Makeshift Cocktail"
+			"item_type_name"			"Flame Thrower"
+			"item_description"			"Soak your enemies in a nasty mix of hot stuff and various chemicals!"
+			"item_logname"				"CHEMTHROWER"
+      	    "item_iconname"				"chemthrower"
+		    "image_inventory"			"backpack/weapons/w_models/w_chemthrower"
+			"model_world"				"models/weapons/w_models/w_chemthrower.mdl"
+			"model_player"				"models/weapons/v_models/v_chemthrower_pyro.mdl"		
+			"attach_to_hands"			"2"
+            "extra_wearable"			"models/player/items/pyro/pyro_rocks_mask.mdl"			
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"attributes"
+			{
+                "move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"1.30"
+				}
+			    "increased jump height"																
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"1.1"
+				}
+				"heal on hit for slowfire"
+				{
+				    "attribute_class"   "add_onhit_addhealth"
+					"value"             "2"
+				}
+				"heal on kill"
+                {
+                    "attribute_class"   "heal_on_kill"
+                    "value"             "25"
+                }
+                "critboost on kill"
+                {
+                    "attribute_class"   "add_onkill_critboost_time"
+                    "value"             "2"
+                }
+                "everything can overheal on wearer"
+                {
+                    "attribute_class"   "everything_can_overheal_wearer"
+                    "value"             "1"
+                }
+				"airblast disabled"
+				{
+				    "attribute_class"   "airblast_disabled"
+					"value"             "1"
+				}	
+                "max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-45"
+				}
+				"reduced_healing_from_medics"
+				{
+				    "attribute_class"  "mult_healing_from_medics"
+					"value"            "0.2"
+				}	
+				"health from packs decreased"
+				{
+				    "attribute_class"   "mult_health_frompacks"
+					"value"             "0.3"
+				}	
+                "weapon burn dmg reduced"
+                {
+                    "attribute_class"   "mult_wpn_burndmg"
+                    "value"             "0.25"
+                }					
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Chemthrower.FireStart"
+				"sound_reload"			"Weapon_Chemthrower.FireLoop"
+				"sound_special3"		"Weapon_Chemthrower.WindDown"					
+				"sound_burst"			"Weapon_Chemthrower.FireLoopCrit"
+			}	
+			"mouse_pressed_sound"		"#ui/item_flamethrower_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"  	
+	    }
+        "5011"
+        {
+			"tags"
+			{
+				"bots_cant_use"			"1"														
+			}	
+            "name"                      "TF_WEAPON_ROCKETJUMPER" 
+            "prefab"                    "weapon_rocketlauncher"
+            "show_in_armory"            "1"
+            "item_slot"                 "primary"
+
+            "item_name_color"			"71 98 145 255"
+			"propername"				"0"
+			"item_name"					"Rocket Jumper"
+			"item_type_name"			"Mobility Tool"
+			"item_description"			"Who said you need a pilot's license?"     // It used to say driver's if anyone cares lol
+			"item_logname"				"RKTJUMPER"
+         	"item_iconname"				"cringe"
+		    "image_inventory"			"backpack/weapons/w_models/w_rktjumperbpicon"
+			"model_world"				"models/weapons/fromnowp/w_models/w_rocketjumper.mdl"           // NOWP
+			"model_player"				"models/weapons/fromnowp/v_models/v_rocketjumper_soldier.mdl"	// NOWP
+			"attach_to_hands"			"2"			
+			"used_by_classes"
+			{
+				"soldier"					"1"
+			}			
+			"attributes"
+            {
+                "no self blast dmg"
+                {
+                    "attribute_class"   "no_self_blast_dmg"
+                    "value"             "1"
+                }
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" 			"3.0"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"												
+					"value"				"0.01"													
+				}
+				"jumper disable flags1"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}	
+				"jumper disable flags"															
+				{
+					"attribute_class"	"cannot_pick_up_intelligence"
+					"value"				"1"
+				}				
+				"hide_attrib_percentage"						      
+				{
+					"attribute_class"	"mult_explosion_splash_damage"
+					"value" 			"0.001"													
+				}
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/fromnowp/w_models/w_rocket_rocketjumper.mdl" // I just couldn't make them team colored while they're flying, if that makes sense.
+				}
+			}
+			"visuals"																			
+			{
+				"sound_single_shot"		"Weapon_Rocket_Jumper.Single"
+				"sound_burst"			"Weapon_Rocket_Jumper.SingleCrit"
+				"sound_reload"			"Weapon_RPG.WorldReload"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+				"explosion_effect"		"explosion_bubbles"				
+			}	
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"  	
+	    }
+        "5012"
+        {
+            "name"                      "TF_WEAPON_MARKET_GARDENER" 
+            "prefab"                    "weapon_shovel"
+            "show_in_armory"            "1"
+            "item_slot"                 "melee"
+
+            "item_name_color"			"71 98 145 255"
+			"propername"				"0"
+			"item_name"					"Market Gardener"
+			"item_type_name"			"#TF_WEAPON_SHOVEL"
+			"item_description"			"Boots on the ground won't cut it soldier!"
+			"item_logname"				"MARKET_GARDENER"
+         	"item_iconname"				"marketgardener"
+		    "image_inventory"			"backpack/weapons/w_models/w_market_gardener"
+			"model_world"				"models/weapons/c_models/c_market_gardener/c_market_gardener.mdl"
+			"model_player"				"models/weapons/c_models/c_market_gardener/c_market_gardener.mdl"
+			"attach_to_hands"			"1"			
+			"used_by_classes"
+			{
+				"soldier"					"1"
+			}			
+			"attributes"
+            {
+				"mod crit while airborne"					
+				{
+					"attribute_class"	"crit_while_airborne"									
+					"value"				"1"														
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+			}	
+			"mouse_pressed_sound"		"#ui/item_shovel_pickup.wav"
+			"drop_sound"				"#ui/item_shovel_drop.wav"  	
+	    }
+        "5013"
+        {
+            "name"                      "TF_WEAPON_SPITFIRE" 
+            "prefab"                    "weapon_rocketlauncher"
+            "show_in_armory"            "1"
+            "item_slot"                 "primary"
+
+            "item_name_color"			"245 221 125 255"
+			"propername"				"0"
+			"item_name"					"Spitfire"
+			"item_type_name"			"#TF_WEAPON_ROCKETLAUNCHER"
+			"item_description"			"Rain hell from above!"
+			"item_logname"				"spitfire"
+         	"item_iconname"				"spitfire"
+		    "image_inventory"			"backpack/weapons/w_models/w_spitfire"
+			"model_world"				"models/workshop/weapons/c_models/c_atom_launcher/c_atom_launcher.mdl"
+			"model_player"				"models/workshop/weapons/c_models/c_atom_launcher/c_atom_launcher.mdl"
+			"attach_to_hands"			"1"			
+			"used_by_classes"
+			{
+				"soldier"					"1"
+			}			
+			"attributes"
+            {					
+				"provide on active"
+				{
+				    "attribute_class"   "provide_on_active"
+					"value"             "1"
+				}	
+				"spitfire property"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}	
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value"				"0.85"
+				}					
+				"clip size penalty"
+				{
+				    "attribute_class"   "mult_clipsize"
+					"value"             "0.75"
+				}	
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }				
+				"mod crit while airborne"					
+				{
+					"attribute_class"	"crit_while_airborne"									
+					"value"				"1"														
+				}
+                "crits become minicrits"
+                {
+                    "attribute_class"   "crits_become_minicrits"
+                    "value"             "1"
+                }
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_rocket_libertylauncher.mdl"
+				}				
+			}
+			"visuals"																			
+			{
+				"sound_single_shot"		"Weapon_Spitfire.Single"
+				"sound_burst"			"Weapon_Spitfire.SingleCrit"
+				"sound_reload"			"Weapon_RPG.WorldReload"			
+			}			
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"5014"
+		{
+			"name"						"TF_WEAPON_FaN"
+			"prefab"					"weapon_scattergun"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name_color"			"245 221 125 255"
+			"item_name"					"Force-A-Nature"
+			"item_type_name"			"Double Barrel"
+			"item_description"		 	"Weapon reloads its entire clip at once
+
+It's almost like you're flying through  
+a frickin' windshield!"
+			"item_logname"				"force_a_nature"
+			"item_iconname"				"FaN"
+			"image_inventory"			"backpack/weapons/w_models/w_FaN"
+			"model_world"				"models/weapons/fromnowp/w_models/w_double_barrel.mdl"             // I do not understand this w and v model stuff I swear..
+			"model_player"				"models/weapons/fromnowp/v_models/v_double_barrel_scout.mdl"       // I feel sorry for taking this from nowp : /                                                
+			"brass_model"				"models/weapons/shells/shell_forceanature.mdl"                     
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"class_select_nailgun"	 // Looks kinda weird with the scatter one
+				"reload time increased hidden"			"2.86666"								
+			}
+			"attributes"
+			{
+				"hide_attrib_additive"														
+				{
+					"attribute_class"	"provide_on_active"										
+					"value" 			"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 			"0.5"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"				"1"
+				}
+				"scattergun knockback mult"
+				{
+					"attribute_class"	"scattergun_knockback_mult"
+					"value"				"0.35"
+				}				
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" 			"1.2"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"0.9"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" 			"0.34"
+				}
+				"scattergun no reload single"									// 0.6 seconds right?				
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"				"1"
+				}
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }				
+                "apply self knockback"
+                {
+                    "attribute_class"   "apply_self_knockback"
+                    "value"             "185"
+                }					
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Scatter_Gun_Double.Single"
+				"sound_burst"			"Weapon_Scatter_Gun_Double.SingleCrit"
+				"sound_reload"			"Weapon_DoubleBarrel.WorldReload"
+			}
+			"mouse_pressed_sound"		"#items/pickup_large.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		
+	    }
+        "5015"
+		{
+			"name"						"TF_WEAPON_TETSHOT"
+			"prefab"					"weapon_pistol"
+			"show_in_armory"			"1"
+		    "item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_name_color"			"245 221 125 255"
+			"item_name"					"Tetanus Shot"
+			"item_type_name"			"Makeshift Pistol"
+			"item_description"		 	"A serious health concern for whoever's on the receiving end..."
+			"item_logname"				"tet_shot"
+			"item_iconname"				"tetshot"
+			"image_inventory"			"backpack/weapons/w_models/w_tetshot"
+			"model_world"				"models/workshop/weapons/c_models/c_tet_shot/c_tet_shot.mdl"            
+			"model_player"				"models/workshop/weapons/c_models/c_tet_shot/c_tet_shot.mdl"                       
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{								
+				"custom falloff"						"0.0001"
+				"custom projectile model"               "models/weapons/w_models/w_rusted_nail.mdl"  // Nail might not support model changes... -_-
+				"override projectile type"              "29"
+     			"always draw tracer"					"1"		
+			}			
+			"attributes"
+			{		
+				"provide on active"
+				{
+				    "attribute_class"   "provide_on_active"
+					"value"             "1"
+				}
+				"tetshot desc"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}					
+                "tetshot dmg display"
+                {
+                    "attribute_class"   "DISPLAY_ONLY"
+                    "value"             "1"
+                }					
+				"tetshot prop2"
+				{
+				    "attribute_class"   "DISPLAY_ONLY"
+					"value"             "1"
+				}			
+				"deploy time decreased"
+				{
+					"attribute_class"	"mult_deploy_time"
+					"value"				"0.4"													
+				}				
+                "tetshot prop1"
+                {
+                    "attribute_class"   "DISPLAY_ONLY"
+                    "value"             "1"
+                }
+                "maxammo secondary reduced"
+                {
+                    "attribute_class"   "mult_maxammo_secondary"
+                    "value"             "0.5"
+                }					
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }
+                "projectile speed increased"
+                {
+                    "attribute_class"   "mult_projectile_speed"
+                    "value"             "2"
+                } 
+				"clip size penalty"
+				{
+				    "attribute_class"   "mult_clipsize"
+					"value"             "0.09"
+				}
+                "damage bonus vs burning"
+                {
+                    "attribute_class"   "mult_dmg_vs_burning"
+                    "value"             "1.40"
+                }
+				"bleeding duration"
+				{
+					"attribute_class"	"bleeding_duration"
+					"value"				"1.5"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"3.2"
+				}	
+				"single wep deploy time decreased"														
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"										
+					"value"				"0.3"
+				}					
+			}
+			"visuals"
+			{
+			    "muzzle_flash"			"muzzle_pipelauncher"
+			}	
+			"mouse_pressed_sound"		"#items/pickup_large.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		
+	    }
+        "5016"
+		{
+			"name"						"TF_WEAPON_SHARPSHOOTER"
+			"prefab"					"weapon_shotgun"       
+			"show_in_armory"			"1"
+		    "item_slot"					"secondary" 
+
+			"propername"				"1"
+			"item_name_color"			"245 221 125 255"
+			"item_name"					"Sharpshooter"
+			"item_type_name"			"Shotgun"
+			"item_description"		 	"One, two, this is my gun!
+Three, four, it's really fun!"
+			"item_logname"				"sharpshooter"
+			"item_iconname"				"sharpshooter"
+			"image_inventory"			"backpack/weapons/w_models/w_turkeyshooter"
+			"model_world"				"models/weapons/c_models/c_turkey_shooter/c_turkey_shooter.mdl"            
+			"model_player"				"models/weapons/c_models/c_turkey_shooter/c_turkey_shooter.mdl"
+			"brass_model"				"models/weapons/shells/custom_shells/shell_turkey.mdl"		
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"soldier"					"1"		
+			}			
+			"attributes"
+			{			
+				"mod mini-crit airborne"
+				{
+				    "attribute_class"   "mini_crit_airborne"
+					"value"             "1"
+				}
+                "weapon spread bonus"
+                {
+                    "attribute_class"   "mult_spread_scale"
+                    "value"             "0.2"
+                }
+				"deploy time decreased"
+				{
+					"attribute_class"	"mult_deploy_time"
+					"value"				"0.6"													
+				}				
+				"damage penalty"	
+                {
+                    "attribute_class"   "mult_dmg"
+                    "value"             "0.55"
+                }			
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"hidden separator"
+                {
+                    "attribute_class"    "hidden_separator"
+                    "value"                "1"
+                }				
+                "single wep deploy time decreased"
+                {
+                    "attribute_class"   "mult_single_wep_deploy_time"
+                    "value"             "0.6"
+                }				
+			}	
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Dragon.Single"
+				"sound_burst"			"Weapon_Dragon.SingleCrit"
+			}				
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		
+	    }
+        "5017"
+		{
+			"name"						"TF_WEAPON_ATOMIZER"
+			"prefab"					"weapon_bat"       
+			"show_in_armory"			"0"
+		    "item_slot"					"melee" 
+
+			"propername"				"1"
+			"item_name_color"			"71 98 145 255"
+			"item_name"					"Atomizer"
+			"item_type_name"			"Bat"
+			"item_description"		 	"Wings? I don't need 'em to fly!"
+			"item_logname"				"atomizer"
+			"item_iconname"				"atomizer"
+			"image_inventory"			"backpack/weapons/w_models/w_bat"
+			"model_world"				"models/workshop/weapons/c_models/c_bonk_bat/c_bonk_bat.mdl"            
+			"model_player"				"models/workshop/weapons/c_models/c_bonk_bat/c_bonk_bat.mdl"	
+			"attach_to_hands"			"1"
+//			"extra_wearable"			"models/player/items/scout/bit_trippers_scout.mdl" // Huh... this bodygroup isn't in TF2C... well fucking shit....
+			"used_by_classes"
+			{
+				"scout"					"1"		
+			}			
+			"attributes"
+			{								
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value"				"1"
+				}
+                "increased jump height"																
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"1.25"
+				}
+				"dmg taken increased"
+				{
+				    "attribute_class"   "mult_dmgtaken"
+					"value"             "1.35"
+				}			
+			}				
+			"mouse_pressed_sound"		"#items/pickup_melee.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"		
+	    }
+	}
+    "attributes" // If they weren't so many by now, maybe I'd give them better names.
+	{
+	    "9002"
+	    {
+            "name"					"nofalldmg"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"Wearer takes no falling damage"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+	    }
+        "9003"
+	    {
+            "name"					"jump height on wearer"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"Wearer jumps 10% higher"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+	    }
+        "9004"
+	    {
+            "name"					"60% draw speed wearer"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"Wearer draws weapons 60% faster"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+	    }
+        "9005"
+        {   
+		    "name"                  "axt vuln"
+           	"attribute_class"       "DISPLAY_ONLY"
+            "description_string"    "~57% damage vulnerability while active and for a brief period after switching weapons"
+            "description_format"    "value_is_additive"
+            "effect_type"           "negative"
+            "hidden"                "0"
+        }
+        "9006"
+	    {
+            "name"					"extra vs burn dmg2"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"40% extra damage vs burning targets"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+	    }
+        "9007"
+	    {
+            "name"					"dragonwrathproperty1"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"Load up to 3 shots, press fire to release barrage"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+	    }
+        "9008"
+	    {
+            "name"					"dragonfirespeed"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"30% faster firing speed"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+	    }
+        "9009"
+	    {
+            "name"					"dragonwrathproperty2"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"Has a horizontal and 50% wider spread"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+            "hidden"                "0"			
+        }
+        "9010"
+	    {
+            "name"					"pwrjackspeed"
+			"attribute_class"		"DISPLAY_ONLY"
+			"description_string"	"15% faster move speed while active"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+            "hidden"                "0"			
+        }
+        "9011"
+		{
+			"name"					"bfbonkill"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"On kill : Gain a speed boost for 6 seconds."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"                "0"
+		}
+        "9012"
+        {   
+		    "name"	                "haste on hit"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"    "On hit : Gain haste for 5 seconds."
+			"description_format"    "value_is_additive"
+			"effect_type"           "positive"
+			"hidden"                "0"
+		}
+        "9013"
+        {   
+		    "name"	                "gpp property"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"    "Mini-crits if user is launched in the air by explosives"
+			"description_format"    "value_is_additive"
+			"effect_type"           "positive"
+			"hidden"                "0"
+		}
+	    "9014"
+		{
+			"name"					"jumper disable flags1"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"Wearer cannot pick up the flag/intel"		
+			"description_format"	"value_is_additive"										
+			"effect_type"			"negative"
+			"hidden"                "0"
+		}
+	    "9015"
+		{
+			"name"					"spitfire property"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"Mini-crits while wielder is blast jumping"		
+			"description_format"	"value_is_additive"										
+			"effect_type"			"positive"
+			"hidden"                "0"
+		}
+        "9016"  
+        {
+			"name"					"tetshot desc"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"Weapon fires an incredibly fast projectile, its damage is heavily affected by range."		
+			"description_format"	"value_is_additive"										
+			"effect_type"			"neutral"
+			"hidden"                "0"     		
+        }
+        "9017"
+        {
+			"name"					"tetshot prop1"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"Holds one shot"		
+			"description_format"	"value_is_additive"										
+			"effect_type"			"negative"
+			"hidden"                "0"
+        }
+        "9018"
+        {
+        	"name"					"tetshot prop2"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"+40% dmg vs burning targets"		
+			"description_format"	"value_is_additive"										
+			"effect_type"			"positive"
+			"hidden"                "0"
+        }
+        "9019"
+        {
+        	"name"					"tetshot dmg display"
+			"attribute_class"       "DISPLAY_ONLY"
+			"description_string"	"Can deal up to 72 damage."		
+			"description_format"	"value_is_additive"										
+			"effect_type"			"positive"
+			"hidden"                "0"
+        }			
+	}
+}
