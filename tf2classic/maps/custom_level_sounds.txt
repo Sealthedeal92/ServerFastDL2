@@ -1,0 +1,250 @@
+
+// ------------------------------------------------------------------------------------ //
+// SSG
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_SSG.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_58dB"
+	"wave"			")weapons/tfcsyringe_shoot.wav"
+}
+"Weapon_SSG.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_58dB"
+	"wave"			")weapons/tfcsyringe_shootcrit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// GB
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_GB.Single"
+{
+
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/doom_scout_shotgun.wav"
+}
+"Weapon_GB.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/doom_scout_shotgun_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// DEGREASER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Degreaser.Pilot"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"			")weapons/degreaser_pilot.wav"
+}
+"Weapon_Degreaser.FireStart"	
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"			")weapons/beta_fire_start.wav"
+}
+"Weapon_Degreaser.FireLoop"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"			")weapons/beta_fire_loop.wav"
+}
+"Weapon_Degreaser.WindDown"
+{
+    "channel"       "CHAN_STATIC"
+	"soundlevel"    "SNDLVL_94dB"
+    "wave"          ")weapons/beta_fire_end.wav"
+}   
+"Weapon_Degreaser.FireLoopCrit"
+{
+    "channel"       "CHAN_WEAPON"
+	"soundlevel"    "SNDLVL_94dB"
+    "wave"          ")weapons/beta_fire_loopcrit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// DRAGON'S WRATH
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Dragon.Single"
+{
+
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/tf2_backshot_shotty.wav"
+}
+"Weapon_Dragon.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/tf2_backshot_shotty_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// POCKET PISTOL
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Pocket.Single"
+{
+
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/doom_scout_pistol.wav"
+}
+"Weapon_Pocket.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/doom_scout_pistol_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// CHEMTHROWER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Chemthrower.FireStart"	
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"			")weapons/chemthrower_start.wav"
+}
+"Weapon_Chemthrower.FireLoop"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"			")weapons/chemthrower_loop.wav"
+}
+"Weapon_Chemthrower.WindDown"
+{
+    "channel"       "CHAN_STATIC"
+	"soundlevel"    "SNDLVL_94dB"
+    "wave"          ")weapons/chemthrower_end.wav"
+}   
+"Weapon_Chemthrower.FireLoopCrit"
+{
+    "channel"       "CHAN_WEAPON"
+	"soundlevel"    "SNDLVL_94dB"
+    "wave"          ")weapons/chemthrower_loop_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// ROCKET JUMPER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Rocket_Jumper.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"		")weapons/rocket_jumper_shoot.wav"
+}
+"Weapon_Rocket_Jumper.Explode"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_95dB"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+	"wave"		")weapons/rocket_jumper_explode1.wav"
+}
+"Weapon_Rocket_Jumper.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"			")weapons/rocket_jumper_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// GENTLEMANN PISTOL
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_GPP.Single"
+{
+
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/pistol_dm_shoot.wav"
+}
+"Weapon_GPP.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/pistol_dm_shoot_crit.wav"
+}
+"Weapon_GPP.WorldReload"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_74dB"
+	"wave"		    "weapons/pistol_worldreload_merc.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// SPITFIRE
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Spitfire.Single"
+{
+
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/spitfire_fire.wav"
+}
+"Weapon_Spitfire.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/spitfire_fire_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ // The reload is a custom sound taken from nowp
+// FORCE A NATURE
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Scatter_Gun_Double.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/scatter_gun_double_shoot.wav"
+}
+
+"Weapon_Scatter_Gun_Double.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/scatter_gun_double_shoot_crit.wav"
+}
+
+"Weapon_DoubleBarrel.WorldReload"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"wave"			")weapons/scatter_gun_double_nowpreload.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// WELROD
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Welrod.Single"
+{
+
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/welrod_shoot.wav"
+}
+"Weapon_Welrod.SingleCrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_96dB"
+	"wave"			")weapons/welrod_shoot_crit.wav"
+}
+
+
